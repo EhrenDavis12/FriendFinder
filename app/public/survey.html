@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Survey Questions</h1>
+            <hr>
+            <div class="row justify-content-center">
+                <div class="text-center">
+                    <a href="/"><button class="btn btn-primary btn-lg"><span class="fa fa-eye"></span>Home</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3><strong>About You</strong></h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" role="form" action="./friends">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="photo">photo URL</label>
+                                <input type="text" class="form-control" name="photo" id="photo">
+                            </div>
+
+                            <p>1 : I do not agree<br>5 : I strongly agree</p>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like to hike?</label>
+                                <select class="form-control" name="scores[]" id="Q1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like sport?</label>
+                                <select class="form-control" name="scores[]" id="Q2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like art?</label>
+                                <select class="form-control" name="scores[]" id="Q3">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like long term relationships?</label>
+                                <select class="form-control" name="scores[]" id="Q4">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like video games?</label>
+                                <select class="form-control" name="scores[]" id="Q5">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like music?</label>
+                                <select class="form-control" name="scores[]" id="Q6">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like computers?</label>
+                                <select class="form-control" name="scores[]" id="Q7">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like to read?</label>
+                                <select class="form-control" name="scores[]" id="Q8">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like to learn?</label>
+                                <select class="form-control" name="scores[]" id="Q9">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scores[]">Do you like yourself?</label>
+                                <select class="form-control" name="scores[]" id="Q10">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>
+                                    Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
