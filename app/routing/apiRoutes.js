@@ -17,13 +17,12 @@ var apiRoutes = function (app) {
         };
 
         let matchFinder = new _matchFinder();
-        let yourMatchName = matchFinder.getMatch(obj.scores);
-        console.log("yourMatchName: " + yourMatchName);
+        let yourMatch = matchFinder.getMatch(obj.scores);
+        console.log("yourMatchName: " + yourMatch.name);
 
         friends.push(obj);
-        let appDir = path.dirname(__dirname);
-        res.status(200).sendFile(path.join(appDir, "public", "home.html"));
-        
+        //let appDir = path.dirname(__dirname);
+        res.status(200).send(yourMatch);;
     });
 }
 
